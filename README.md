@@ -6,9 +6,7 @@ ShoppyGlobe is a backend e-commerce API built using Node.js, Express.js, and Mon
 
 ## github repository
 
-🔗 [ShoppyGlobe github repository]()
-
----
+🔗 [ShoppyGlobe github repository](https://github.com/upadhyayji2811/Shopyglobe-bakend.git)
 
 ---
 
@@ -33,7 +31,7 @@ ShoppyGlobe is a backend e-commerce API built using Node.js, Express.js, and Mon
 
 ---
 
-## 🧩 Project Setup
+## Project Setup
 
 ### 1. Clone the Repository
 
@@ -146,11 +144,11 @@ npm run import:products  # Runs importProducts.js to populate products collectio
 
 ---
 
-## 📬 Sample Request Body
+##  Sample Request Body
 
 Below are some example JSON payloads for making requests to various endpoints:
 
-### 🔐 Register User
+###  Register User
 
 `POST /register`
 
@@ -162,7 +160,7 @@ Below are some example JSON payloads for making requests to various endpoints:
 }
 ```
 
-### 🔐 Login User
+###  Login User
 
 `POST /login`
 
@@ -173,7 +171,7 @@ Below are some example JSON payloads for making requests to various endpoints:
 }
 ```
 
-### 🛒 Add Product to Cart
+###  Add Product to Cart
 
 `POST /cart`
 (Requires Bearer Token)
@@ -185,7 +183,7 @@ Below are some example JSON payloads for making requests to various endpoints:
 }
 ```
 
-### 🛒 Update Cart Item Quantity
+###  Update Cart Item Quantity
 
 `PUT /cart/:productId`
 (Requires Bearer Token)
@@ -196,7 +194,7 @@ Below are some example JSON payloads for making requests to various endpoints:
 }
 ```
 
-### ❌ Remove Product from Cart
+###  Remove Product from Cart
 
 `DELETE /cart/:productId`
 (Requires Bearer Token)
