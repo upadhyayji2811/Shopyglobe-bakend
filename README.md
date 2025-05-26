@@ -72,7 +72,7 @@ This project uses environment variables to configure sensitive information.
 - Connect using:
 
 ```
-mongodb://localhost:27017/shoppyglobe
+mongodb://127.0.0.1:27017/shoppyglobe
 ```
 
 - Create a database called `shoppyglobe` manually or it will be auto-created on app start.
@@ -91,7 +91,6 @@ npm run dev     # Start server with nodemon for auto-reloading
 npm run import:products  # Runs importProducts.js to populate products collection
 ```
 
----
 
 ## Production Commands
 
@@ -142,75 +141,6 @@ ShoppyGlobe_backend/
 npm run import:products  # Runs importProducts.js to populate products collection
 ```
 
----
 
-##  Sample Request Body
 
-Below are some example JSON payloads for making requests to various endpoints:
 
-###  Register User
-
-`POST /register`
-
-```json
-{
-  "name": "John Doe",
-  "email": "john@example.com",
-  "password": "password123"
-}
-```
-
-###  Login User
-
-`POST /login`
-
-```json
-{
-  "email": "john@example.com",
-  "password": "password123"
-}
-```
-
-###  Add Product to Cart
-
-`POST /cart`
-(Requires Bearer Token)
-
-```json
-{
-  "productId": "YOUR_PRODUCT_ID_HERE",
-  "quantity": 2
-}
-```
-
-###  Update Cart Item Quantity
-
-`PUT /cart/:productId`
-(Requires Bearer Token)
-
-```json
-{
-  "quantity": 3
-}
-```
-
-###  Remove Product from Cart
-
-`DELETE /cart/:productId`
-(Requires Bearer Token)
-(No body required)
-
-### Create and Update products
-
-`(POST/PUT) /products`
-(body required)
-
-```json
-{
-  "name": "Product Name",
-  "price": 99.99,
-  "description": "Product details...",
-  "stock": 10,
-  "images": ["images"]
-}
-```
